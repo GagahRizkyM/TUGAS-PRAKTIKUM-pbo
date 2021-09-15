@@ -3,7 +3,7 @@
 <head>
 </head>
 <body>  
-<h2>1. Menentukan Bilangan deret aritmatika</h2>
+<h2>2. Program Menentukan Deret</h2>
 
 <form method="post" action="">
     <input type="text" name="awal" placeholder="Masukkan nilai awal">
@@ -15,21 +15,23 @@
     <input type="submit" name="submit" value="ENTER">
 </form>
 <br>
-
 <?php
 
       if ($_SERVER["REQUEST_METHOD"] == "POST") {
          $awal = $_POST['awal'];
          $beda = $_POST['beda'];
          $suku = $_POST['suku'];
+$var = 0;
 
          for ($i=0; $i < $suku; $i++) {
-            $awal = $awal + $beda;
-            //$awal = $keN;
-            echo $awal.'  ';
+            echo $awal += $var; 
+
+echo " ";
+
+      $var = $beda;
+            
          }
       }
    ?>
-
 </body>
 </html>
